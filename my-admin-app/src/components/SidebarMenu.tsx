@@ -12,6 +12,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from 'react-router-dom';
+import {Home} from "@mui/icons-material";
 
 const drawerWidth = 240;
 
@@ -70,6 +71,7 @@ export default function SidebarMenu({ open }: SidebarMenuProps) {
     const navigate = useNavigate();
 
     const menuItems = [
+        { text: 'Home', icon: <Home />, path: '/' },
         { text: 'Dashboard', icon: <DashboardIcon />, path: '/dashboard' },
         { text: 'Users', icon: <PeopleIcon />, path: '/users' },
         { text: 'Reports', icon: <BarChartIcon />, path: '/reports' },

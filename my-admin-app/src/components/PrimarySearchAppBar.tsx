@@ -159,7 +159,7 @@ export default function PrimarySearchAppBar({ onMenuClick }: PrimarySearchAppBar
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed">
+            <AppBar position="fixed" sx={{ bgcolor: '#1c9c1c', color: '#000000' }}>
                 <Toolbar>
                     <IconButton
                         size="large"

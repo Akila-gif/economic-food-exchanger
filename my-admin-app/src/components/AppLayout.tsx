@@ -10,6 +10,7 @@ import Dashboard from './Dashboard';
 import Reports from './Reports';
 import Integrations from './Integrations';
 import Settings from './Settings';
+import Home from "./Home.tsx";
 
 const drawerWidth = 240;
 
@@ -59,7 +60,7 @@ export default function AppLayout() {
                 <Main open={open}>
                     <DrawerHeader />
                     <Routes>
-                        <Route path="/" element={<Dashboard />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="/users" element={<UserTable />} />
                         <Route path="/reports" element={<Reports />} />
